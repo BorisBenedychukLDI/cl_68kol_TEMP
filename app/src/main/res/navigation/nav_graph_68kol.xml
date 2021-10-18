@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_68kol"
+    app:startDestination="@id/fragmentSplash68kol">
+
+    <fragment
+        android:id="@+id/fragmentInternet68kol"
+        android:name="com.cooos.cl.molot.app.Fragments68kol.FragmentInternet68kol"
+        android:label="FragmentInternet68kol" >
+        <action
+            android:id="@+id/action_fragmentInternet68kol_to_fragmentWeb68kol"
+            app:destination="@id/fragmentWeb68kol"
+            app:popEnterAnim="@anim/alphaanima68kol"
+            app:popExitAnim="@anim/alphaanima_exit_68kol"
+            app:enterAnim="@anim/alphaanima68kol"
+            app:exitAnim="@anim/alphaanima_exit_68kol"
+            app:popUpTo="@id/fragmentSplash68kol"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_fragmentInternet68kol_to_fragmentSplash68kol"
+            app:destination="@id/fragmentSplash68kol"
+            app:popEnterAnim="@anim/alphaanima68kol"
+            app:popExitAnim="@anim/alphaanima_exit_68kol"
+            app:enterAnim="@anim/alphaanima68kol"
+            app:exitAnim="@anim/alphaanima_exit_68kol"
+            app:popUpTo="@id/fragmentSplash68kol"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSplash68kol"
+        android:name="com.cooos.cl.molot.app.Fragments68kol.FragmentSplash68kol"
+        android:label="FragmentSplash68kol" >
+        <action
+            android:id="@+id/action_fragmentSplash68kol_to_fragmentWeb68kol"
+            app:destination="@id/fragmentWeb68kol"
+            app:popEnterAnim="@anim/alphaanima68kol"
+            app:popExitAnim="@anim/alphaanima_exit_68kol"
+            app:enterAnim="@anim/alphaanima68kol"
+            app:exitAnim="@anim/alphaanima_exit_68kol"
+            app:popUpTo="@id/fragmentSplash68kol"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_fragmentSplash68kol_to_fragmentInternet68kol"
+            app:destination="@id/fragmentInternet68kol"
+            app:popEnterAnim="@anim/alphaanima68kol"
+            app:popExitAnim="@anim/alphaanima_exit_68kol"
+            app:enterAnim="@anim/alphaanima68kol"
+            app:exitAnim="@anim/alphaanima_exit_68kol"
+            app:popUpTo="@id/fragmentSplash68kol"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentWeb68kol"
+        android:name="com.cooos.cl.molot.app.Fragments68kol.FragmentWeb68kol"
+        android:label="FragmentWeb68kol" >
+        <action
+            android:id="@+id/action_fragmentWeb68kol_to_fragmentInternet68kol"
+            app:destination="@id/fragmentInternet68kol"
+            app:popEnterAnim="@anim/alphaanima68kol"
+            app:popExitAnim="@anim/alphaanima_exit_68kol"
+            app:enterAnim="@anim/alphaanima68kol"
+            app:exitAnim="@anim/alphaanima_exit_68kol"
+            app:popUpTo="@id/fragmentSplash68kol"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

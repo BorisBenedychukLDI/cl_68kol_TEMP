@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="3000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/gl_splash_68kol"
+            motion:layout_constraintGuide_percent="0.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Constraint
+            android:id="@+id/iv_bg_68kol"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/iv_logo_68kol"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="327dp"
+            android:layout_height="115dp"
+            motion:layout_constraintBottom_toTopOf="@+id/gl_splash_68kol"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/b_splash_68kol"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:alpha="0"
+            android:layout_width="400dp"
+            android:layout_height="81dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/gl_splash_68kol"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_editor_absoluteY="559dp" />
+        <Constraint
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:alpha="1"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/pb_loading_68kol"
+            motion:layout_constraintBottom_toBottomOf="@+id/iv_bg_68kol"
+            android:layout_marginBottom="705dp" />
+    </ConstraintSet>
+</MotionScene>
