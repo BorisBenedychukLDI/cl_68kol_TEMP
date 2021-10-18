@@ -2,12 +2,14 @@ package com.cooos.cl.molot.app.Fragments68kol
 
 import android.content.Context.MODE_PRIVATE
 import android.os.Bundle
+import android.transition.AutoTransition
 import android.transition.ChangeBounds
 import android.transition.Scene
 import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ProgressBar
 import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
@@ -47,7 +49,11 @@ class FragmentSplash68kol : Fragment(R.layout.fragment_splash_68kol) {
         bindingSplash68kol.bSplash68kol.setOnClickListener {
             bindingSplash68kol.bSplash68kol.isClickable = false
             lifecycleScope.launch {
-                TransitionManager.go(Scene.getSceneForLayout(bindingSplash68kol.cl68kol, R.layout.transition_scene_splash_68kol, requireContext()),ChangeBounds())
+                TransitionManager.go(Scene.getSceneForLayout(bindingSplash68kol.cl68kol, R.layout.transition_scene_splash_68kol, requireContext()), ChangeBounds())
+                view.findViewById<ProgressBar>(R.id.pb_loading_68kol).animate().alpha(1f).run {
+                    startDelay = 1000
+                    duration = 2000
+                }
                 delay(5000)
                 findNavController().navigate(
                     R.id.action_fragmentSplash68kol_to_fragmentWeb68kol,

@@ -16,18 +16,20 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cos_bg_68kol" />
+        app:srcCompat="@drawable/cos_bg_68kol"
+        android:contentDescription="@string/background_68kol" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie_wifi_68kol"
-        android:layout_width="304dp"
-        android:layout_height="285dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:lottie_speed="0.5"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/wifi_white_missing" />
+        app:lottie_rawRes="@raw/wifi_white_missing"
+        app:lottie_speed="0.6" />
 </androidx.constraintlayout.widget.ConstraintLayout>

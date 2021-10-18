@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cl_68kol"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -24,7 +23,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cos_bg_68kol" />
+        app:srcCompat="@drawable/cos_bg_68kol"
+        android:contentDescription="@string/background_68kol" />
 
     <ProgressBar
         android:id="@+id/pb_loading_68kol"
@@ -45,14 +45,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_68kol" />
+        app:srcCompat="@drawable/logo_68kol"
+        android:contentDescription="@string/logo_68kol" />
 
     <Button
         android:id="@+id/b_splash_68kol"
         android:layout_width="258dp"
         android:layout_height="55dp"
         android:background="@drawable/custom_button_68kol"
-        android:text="Let's go!"
+        android:text="@string/button_start_68kol"
         android:textSize="24sp"
         android:alpha="1"
         android:textStyle="bold"
